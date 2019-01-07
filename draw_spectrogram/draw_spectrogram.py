@@ -18,7 +18,7 @@ print('freq = {}'.format(fs))
 print('len = {}'.format(len_xs))
 
 spectrogram = []
-num_frame = (len_xs - window_shift) // window_shift 
+num_frame = (len_xs - window_size) // window_shift + 1
 print(num_frame)
 for idx in range(num_frame):
     print('{}, {}, {}'.format(idx, idx*window_shift, idx*window_shift+window_size))
